@@ -1,0 +1,116 @@
+﻿@page
+@model peopleModel
+@{
+    ViewData["Title"] = "Наша команда";
+}
+
+<div class="container">
+    <div class="row">
+        <div class="col-md-6">
+            <div class="image-container">
+                <img src="~/images/sanya.jpg" alt="Картинка 1" class="img-fluid">
+                <div class="caption caption-right">Александр</div>
+            </div>
+        </div>
+        <div class="col-md-6">
+            <div class="text-container">
+                <div class="text-background">
+                    <p>Он - наш эксперт по культурным путешествиям. С многолетним опытом путешествий по всему миру, Александр знаком с самыми удивительными традициями и обычаями различных народов.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-6 order-md-2">
+            <div class="image-container">
+                <img src="~/images/katya.png" alt="Картинка 2" class="img-fluid">
+                <div class="caption caption-left">Подпись 2</div>
+            </div>
+        </div>
+        <div class="col-md-6 order-md-1">
+            <div class="text-container">
+                <div class="text-background">
+                    <p>Екатерина - наша исследовательница природных красот. Она обожает горные пейзажи, национальные парки и всю прелесть дикой природы.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-6">
+            <div class="image-container">
+                <img src="~/images/mariya.png" alt="Картинка 3" class="img-fluid">
+                <div class="caption caption-right">Подпись 3</div>
+            </div>
+        </div>
+        <div class="col-md-6">
+            <div class="text-container">
+                <div class="text-background">
+                    <p>Мария - наша экспертка по гастрономическим путешествиям. Она всегда ищет лучшие места, чтобы отведать местную кухню и попробовать аутентичные блюда. </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-6 order-md-2">
+            <div class="image-container">
+                <img src="~/images/andry.png" alt="Картинка 4" class="img-fluid">
+                <div class="caption caption-left">Подпись 4</div>
+            </div>
+        </div>
+        <div class="col-md-6 order-md-1">
+            <div class="text-container">
+                <div class="text-background">
+                    <p>Андрей - наш эксперт в области экстремальных приключений. Он обожает адреналин и постоянно ищет новые вызовы.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<style>
+    .image-container {
+        position: relative;
+        max-width: 350px;
+        height: 350px;
+        margin-bottom: 20px;
+    }
+
+        .image-container img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+    .caption {
+        background-color: rgba(0, 0, 0, 0.5);
+        color: white;
+        padding: 5px;
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+        text-align: center;
+    }
+
+    .caption-right {
+        right: 0;
+    }
+
+    .caption-left {
+        left: 0;
+    }
+
+    .text-container {
+        margin-top: 10px;
+    }
+
+    .text-background {
+        background-color: rgba(0, 0, 0, 0.7);
+        padding: 10px;
+        border: 1px solid white;         
+    }
+
+    .text-container p {
+        color: white;
+        margin: 0;
+    }
+</style>
